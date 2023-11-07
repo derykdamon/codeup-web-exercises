@@ -1,52 +1,33 @@
-*{
+* {
     box-sizing: border-box;
 }
-
-body{
+body {
     margin: 0;
 }
-
-nav{
+nav {
     background: lightgrey;
     font-weight: bold;
 }
-
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    padding: .2em 0;
-    font-weight: normal;
-    flex-grow: 3;
-    text-align: center;
-}
-
 ul {
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-
-a{
-    display: inline-block;
+nav a {
     text-decoration: none;
     color: black;
-    padding: .5em;
+    font-family: Verdana;
+    display: inline-block;
+    padding: 1em;
 }
-
-a:visited{
-    color: black;
+nav a:hover {
+    color: cyan;
+    background: black;
 }
-
-a:hover{
-    color: blue;
+.midlogo {
+    margin: auto;
 }
-
-.icon {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+.followUs {
+    margin-left: auto;
 }

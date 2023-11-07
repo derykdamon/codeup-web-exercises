@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Pizza From Deryk</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pizza World</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav w-100">
+        <a class="nav-link active" aria-current="page" href="#">Order Pizza</a>
+        <a class="nav-link" href="#">Menu</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Zip Code" aria-label="Search">
+          <button class="btn btn-outline-primary w-100" type="submit">Search stores near you!</button>
+        </form>
+        <a class="nav-link ms-auto" href="#"><i class="fa-solid fa-user me-2"></i>Sign Up!</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-container">
+    <img src="media/pizza.png" alt="Pizza Image">
+    <div class="hero-text">Welcome to Pizza World!</div>
+  </div>
+</header>
+
+<section class="container mt-4">
+  <h2>Build your own pizza!</h2>
+  <div class="tabs">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#size-crust"><i class="fa-solid fa-1"></i> Size and Crust</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#cheese-sauce"><i class="fa-solid fa-2"></i> Cheese and Sauce</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#toppings"><i class="fa-solid fa-3"></i> Toppings</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Size and Crust tab content -->
+      <div id="size-crust" class="tab-pane fade show active">
+        <div class="section-title">Choose Size and Crust</div>
+
+        <!-- Hand Tossed Option -->
+        <div class="crust-section">
+          <div class="crust-title">Hand Tossed</div>
+          <div class="crust-description">Garlic seasoned crust with a rich, buttery taste.</div>
+          <div class="size-options">
+            <div class="size-option"><input type="radio" name="crust" value="hand-tossed-small"> Small (10")</div>
+            <div class="size-option"><input type="radio" name="crust" value="hand-tossed-medium"> Medium (12")</div>
+          </div>
+        </div>
+
+        <!-- Crispy Thin Option -->
+        <div class="crust-section">
+          <div class="crust-title">Crispy Thin</div>
+          <div class="crust-description">Thin enough for optimum crispy to crunchy ratio.</div>
+          <div class="size-options">
+            <div class="size-option"><input type="radio" name="crust" value="crispy-thin-medium"> Medium (12")</div>
+            <div class="size-option"><input type="radio" name="crust" value="crispy-thin-large"> Large (14")</div>
+          </div>
+        </div>
+
+        <div class="next-step-container">
+          <button type="button" class="next-step-btn">Next Step ></button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Cheese and Sauce tab content -->
+    <div id="cheese-sauce" class="tab-pane fade">
+      <!-- Add content specific to Cheese and Sauce here -->
+      <div class="section-title">Choose Cheese and Sauce</div>
+
+      <!-- Cheese and Sauce options -->
+      <div class="crust-section">
+        <div class="crust-description">Select your preferred cheese and sauce.</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="cheese" value="mozzarella"> Mozzarella</div>
+          <div class="size-option"><input type="radio" name="cheese" value="cheddar"> Cheddar</div>
+          <div class="size-option"><input type="radio" name="sauce" value="tomato"> Tomato</div>
+          <div class="size-option"><input type="radio" name="sauce" value="marinara"> Marinara</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Toppings tab content -->
+    <div id="toppings" class="tab-pane fade">
+      <h4>Choose Toppings</h4>
+      <p>This is the content for the Toppings tab.</p>
+      <!-- Add content specific to Toppings here -->
+      <div class="section-title">Choose Toppings</div>
+
+      <!-- Meat options -->
+      <div class="crust-section">
+        <div class="crust-title">Choose Meats</div>
+        <div class="crust-description">Select your preferred meat toppings.</div>
+        <div class="size-options">
+          <div class="size-option"><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</div>
+          <div class="size-option"><input type="checkbox" name="toppings" value="sausage"> Sausage</div>
+        </div>
+      </div>
+
+      <!-- Non-meat options -->
+      <div class="crust-section">
+        <div class="crust-title">Choose Non-Meats</div>
+        <div class="crust-description">Select your preferred non-meat toppings.</div>
+        <div class="size-options">
+          <div class="size-option"><input type="checkbox" name="toppings" value="green-peppers"> Green Peppers</div>
+          <div class="size-option"><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<script src="https://kit.fontawesome.com/99f0d6aebc.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

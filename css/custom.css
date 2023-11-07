@@ -1,0 +1,104 @@
+.jumbotron {
+    background-image: url('media/pizza.png');
+    height: 346px;
+    background-size: cover;
+}
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Basic reset for form elements */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.crust-option {
+    margin-bottom: 20px;
+}
+
+#next-step {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-step:hover {
+    background-color: #0056b3;
+}
+
+
+/* Container for the content */
+.tab-content {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Title above the options */
+.section-title {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    margin: -20px -20px 20px -20px; /* to offset the padding and align with the borders */
+    border-bottom: 2px solid #ccc;
+}
+
+/* Each crust section with a slight grey background */
+.crust-section {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* The title for each crust option */
+.crust-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Descriptions for each crust */
+.crust-description {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Options for sizes */
+.size-options {
+    margin-bottom: 10px;
+}
+
+/* Individual size option */
+.size-option {
+    margin-bottom: 5px;
+}
+
+/* The next step button container */
+.next-step-container {
+    text-align: right;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px -20px -20px -20px; /* to align with the section-title */
+    border
