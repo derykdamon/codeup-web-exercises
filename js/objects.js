@@ -184,3 +184,4 @@
     showBookInfo(newBook, 0);
 
 })();
+
