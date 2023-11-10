@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register With Us</title>
+    <title>Veridian Dynamics Register With Us</title>
 </head>
 <body>
-  <form method +
+<h1>Register With Us</h1>
+
+<form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSfclhlUy_SyZYUAqtuvdSPfDvG2z8ko7euHQw3JNk59PDsyjA/formResponse">
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+    <!-- Bio -->
+    <label for="bio">Short Bio:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself"></textarea><br><br>
+
+    <!-- How did you hear about us -->
+    <label>How did you hear about us:</label><br>
+    <input type="radio" id="billboard" name="howHeard" value="billboard">
+    <label for="billboard">Billboard</label><br>
+    <input type="radio" id="radioAd" name="howHeard" value="radio advertisement">
+    <label for="radioAd">Radio Advertisement</label><br>
+    <input type="radio" id="internetAd" name="howHeard" value="internet advertisement">
+    <label for="internetAd">Internet Advertisement</label><br>
+    <input type="radio" id="other" name="howHeard" value="other">
+    <label for="other">Other</label><br><br>
+
+    <!-- Web Browser -->
+    <label for="browser">Web Browser:</label>
+    <select id="browser" name="browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Edge</option>
+        <option value="safari">Safari</option>
+        <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Google Form Embed -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfclhlUy_SyZYUAqtuvdSPfDvG2z8ko7euHQw3JNk59PDsyjA/viewform?embedded=true"
+        width="640" height="586" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </body>
 </html>
