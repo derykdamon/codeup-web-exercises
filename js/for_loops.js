@@ -1,4 +1,5 @@
-'use strict';
+"use strict";
+
 
 // #1. Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for
 // that number (just multiply by the numbers 1 through 10)
@@ -18,17 +19,17 @@ function showMultiplicationTable(number) {
     }
 }
 
-// Prompt the user for input
-const userInput = prompt('Enter a number to display its multiplication table:');
-const number = parseInt(userInput);
-
-// Check if the user entered a valid number
-if (!isNaN(number)) {
-    // Function call with user input
-    showMultiplicationTable(number);
-} else {
-    console.log('Invalid input. Please enter a valid number.');
-}
+// // Prompt the user for input
+// const userInput = prompt('Enter a number to display its multiplication table:');
+// const number = parseInt(userInput);
+//
+// // Check if the user entered a valid number
+// if (!isNaN(number)) {
+//     // Function call with user input
+//     showMultiplicationTable(number);
+// } else {
+//     console.log('Invalid input. Please enter a valid number.');
+// }
 
 
 // #2. Use a for loop and code from the previous lessons to generate 10 random numbers between 20 and 200 and output to
@@ -70,12 +71,6 @@ for (let i = 1; i <= 9; i++) {
 
 // #4. Create a for loop that uses console.log to count down to 5, by 5, from 100
 // For Loop - Counting Down:
-
-for (let i = 100; i >= 5; i--) {
-    console.log(i);
-}
-
-//or
 
 for (let i = 100; i >= 5; i -= 5) {
     console.log(i);
