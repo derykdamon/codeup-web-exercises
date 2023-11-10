@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date and Objects in JavaScript</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  // Create an array of months for printing dates
+  let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  // Create the date corresponding to your birthday using the JavaScript Date object.
+  let jsBirthday = new Date('1990-10-15'); // Example: October 15, 1990
+
+  // Log your birthday in the format: January 1, 2014 using the JavaScript Date object.
+  // Use getDate(), getMonth(), and getFullYear() methods.
+  let day = jsBirthday.getDate();
+  let month = months[jsBirthday.getMonth()];
+  let year = jsBirthday.getFullYear();
+
+  console.log('Here is my birthday using JavaScript: ' + month + ' ' + day + ', ' + year);
+</script>
+</body>
+</html>
