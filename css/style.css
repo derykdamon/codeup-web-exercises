@@ -1,6 +1,5 @@
-/*
-this file is named "style.css" and is in a directory named "css"
-*/.fancy-header {
+
+.fancy-header {
     color: blue;
     text-decoration: underline;
 }
@@ -39,7 +38,7 @@ ul{
     font-size: 16px;
 }
 
-/* Defaul link styles*/
+/* Default link styles*/
 a {
     color: blue; /*Text color for unvisited links */
     text-decoration: none; /* Remove underline for unvisited links */
@@ -62,4 +61,9 @@ a:active {
     color:green; /*Text color for active links */
 }
 
-
+.company-vision img {
+    width: 45%; /* Set the width to be 25% of the parent element */
+    height: auto; /* Maintain aspect ratio */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    margin-bottom: 10px; /* Optional: add some space below each image */
+}
