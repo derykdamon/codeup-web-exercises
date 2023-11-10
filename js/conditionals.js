@@ -24,6 +24,7 @@
 function analyzeColor(color) {
     color = color.toLowerCase(); // Convert the input color to lowercase for case-insensitive matching
 
+    // Check if the color is known and return a corresponding message
     if (color === "green") {
         return "What a coincidence, that's David's favorite!";
     } else if (color === "blue") {
@@ -47,6 +48,8 @@ console.log(analyzeColor('cyan')); // should return "I don't know anything about
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+// Get a random color from the 'colors' array
 const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 /**
@@ -90,7 +93,10 @@ console.log(resultSwitch);
  * function to show it to the user.
  */
 function promptAndAnalyzeColor() {
+    // Prompt the user for their favorite color
     const userColor = prompt("What is your favorite color?");
+
+    // Analyze the user's color and display the result
     const response = analyzeColor(userColor);
     alert(response);
 }
@@ -119,23 +125,29 @@ promptAndAnalyzeColor();
  * return value.
  */
 function calculateTotal(lucky, total) {
-    switch (lucky) {
-        case 0:
-            return total;
-        case 1:
-            return total * 0.9;
-        case 2:
-            return total * 0.75;
-        case 3:
-            return total * 0.65;
-        case 4:
-            return total * 0.5;
-        case 5:
-            return 0;
-        default:
-            return total;
+    if (lucky === 0) {
+        return total;
+    } else if (lucky === 1) {
+        return total * 0.9;
+    } else if (lucky === 2) {
+        return total * 0.75;
+    } else if (lucky === 3) {
+        return total * 0.65;
+    } else if (lucky === 4) {
+        return total * 0.5;
+    } else if (lucky === 5) {
+        return 0;
+    } else {
+        return total;
     }
 }
+console.log(calculateTotal(0, 100)); // should return 100 (no discount)
+console.log(calculateTotal(1, 100)); // should return 90 (10% discount)
+console.log(calculateTotal(2, 100)); // should return 75 (25% discount)
+console.log(calculateTotal(3, 100)); // should return 65 (35% discount)
+console.log(calculateTotal(4, 100)); // should return 50 (50% discount)
+
+
 
 /**
  * TODO:
@@ -145,16 +157,13 @@ function calculateTotal(lucky, total) {
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-//Generate a random number between 0 and 5
+// Generate a random number between 0 and 5
 const luckyNumber = Math.floor(Math.random() * 6);
-const totalBill = parseFloat(prompt("Enter your total bill:"));
+const customerTotal = parseFloat(prompt("What is your total?"));
+alert("Your lucky number is: " + luckyNumber);
+alert("Your total before the discount is: $" + customerTotal.toFixed(2));
+alert("Your price after the discount is: $" + calculateTotal(luckyNumber, customerTotal).toFixed(2));
 
-if (isNaN(luckyNumber) || luckyNumber < 0 || luckyNumber > 5) {
-    alert("Invalid lucky number. Please enter a number between 0 and 5.");
-} else {
-    const discountedPrice = calculateTotal(luckyNumber, totalBill);
-    alert(`Lucky number: ${luckyNumber}\nPrice before discount: $${totalBill.toFixed(2)}\nPrice after discount: $${discountedPrice.toFixed(2)}`);
-}
 
 /* ########################################################################## */
 
@@ -175,33 +184,42 @@ if (isNaN(luckyNumber) || luckyNumber < 0 || luckyNumber > 5) {
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-function analyzeUserNumber() {
-    const shouldEnterNumber = confirm("Would you like to enter a number?");
+// Function to gather and display information about a number
+function numberInput() {
+    // Ask the user if they want to enter a number
+    if (confirm("Would you like to enter a number?")) {
+        // Prompt the user for a number input
+        let userInput = parseFloat(prompt("Enter a number"));
 
-    if (shouldEnterNumber) {
-        const userInput = prompt("Enter a number:");
-        const number = parseFloat(userInput);
+        // Check if the input is a valid number
+        if (!isNaN(userInput)) {
+            // Check if the number is even or odd and display the result
+            if (userInput % 2 === 0) {
+                alert("The number " + userInput + " is even");
+            } else {
+                alert(`The number ${userInput} is odd`);
+            }
 
-        if (!isNaN(number)) {
-            // Check if the number is even or odd
-            const isEven = number % 2 === 0;
-            const evenOrOddMessage = isEven ? "The number is even." : "The number is odd.";
+            // Calculate and display the number plus 100
+            alert("The number plus 100 = " + (userInput + 100));
 
-            // Calculate the number plus 100
-            const numberPlus100 = number + 100;
-
-            // Check if the number is negative or positive
-            const isNegative = number < 0;
-            const negativeOrPositiveMessage = isNegative ? "The number is negative." : "The number is positive.";
-
-            // Display the results using alerts
-            alert(evenOrOddMessage);
-            alert(`Number plus 100: ${numberPlus100}`);
-            alert(negativeOrPositiveMessage);
+            // Check if the number is positive, negative, or zero and display the result
+            if (userInput > 0) {
+                alert("The number " + userInput + " is Positive");
+            } else if (userInput < 0) {
+                alert("The number " + userInput + " is Negative");
+            } else {
+                alert("The number " + userInput + " is Zero");
+            }
         } else {
-            alert("Invalid input. Please enter a valid number.");
+            // Display an alert for invalid input
+            alert("You entered something that was not a number, please try again!!");
         }
     }
 }
 
-analyzeUserNumber();
+// Call the function to start the number analysis process
+numberInput();
+
+
+
