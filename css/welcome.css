@@ -1,0 +1,6 @@
+.company-vision img {
+    width: 45%; /* Set the width to be 25% of the parent element */
+    height: auto; /* Maintain aspect ratio */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    margin-bottom: 10px; /* Optional: add some space below each image */
+}
