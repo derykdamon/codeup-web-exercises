@@ -1,7 +1,45 @@
+:root {
+    --bg-info: #cddeff;
+    --font-info: #504ba5;
+    --bg-success: #cff3da;
+    --font-success: #428f61;
+    --bg-warning: #fcfbc9;
+    --font-warning: #8d7912;
+    --bg-error: #fad3d7;
+    --font-error: #a1495d;
+}
+
 body, html {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message {
+    margin: .2em 0;
+    padding: .4em;
+    border: 2px solid rgba(0,0,0,.35);
+    border-radius: 5px;
+}
+
+.message-info {
+    background: var(--bg-info);
+    color: var(--font-info);
+}
+
+.message-success {
+    background: var(--bg-success);
+    color: var(--font-success);
+}
+
+.message-warning {
+    background: var(--bg-warning);
+    color: var(--font-warning);
+}
+
+.message-error {
+    background: var(--bg-error);
+    color: var(--font-error);
 }
