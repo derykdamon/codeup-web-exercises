@@ -48,7 +48,7 @@
 // the result to calculate the average.
     const totalYearsOfExperience = users.reduce((total, user) => total + user.yearsOfExperience, 0);
 
-    // Calculate average years of experience
+// Calculate average years of experience
     const averageYearsOfExperience = totalYearsOfExperience / users.length;
 
 // Use .reduce to get the longest email from the list of users.
@@ -66,5 +66,4 @@
     console.log(`Total Years of Experience: ${totalYearsOfExperience}, Average: ${averageYearsOfExperience}`);
     console.log(`Longest Email: ${longestEmail}`);
     console.log(instructorsString);
-
 })();
