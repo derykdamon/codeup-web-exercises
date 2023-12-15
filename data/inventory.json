@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Hammer",
+        "quantity": 25,
+        "categories": ["tool"],
+        "price": 20
+    },
+    {
+        "title": "Drill",
+        "quantity": 5,
+        "categories": ["tool", "powered"],
+        "price": 100
+    },
+    {
+        "title": "Mower",
+        "quantity": 5,
+        "categories": ["tool", "gas", "outdoor"],
+        "price": 200
+    },
+    {
+        "title": "Screwdrivers",
+        "quantity": 25,
+        "categories": ["tool"],
+        "price": 10
+    },
+    {
+        "title": "Wrench Set",
+        "quantity": 15,
+        "categories": ["tool"],
+        "price": 30
+    },
+    {
+        "title": "Cordless Drill",
+        "quantity": 10,
+        "categories": ["tool", "powered"],
+        "price": 120
+    },
+    {
+        "title": "Pliers",
+        "quantity": 30,
+        "categories": ["tool"],
+        "price": 15
+    },
+    {
+        "title": "Ladder",
+        "quantity": 8,
+        "categories": ["equipment"],
+        "price": 90
+    },
+    {
+        "title": "Saw",
+        "quantity": 12,
+        "categories": ["tool", "cutting"],
+        "price": 45
+    },
+    {
+        "title": "Garden Hose",
+        "quantity": 20,
+        "categories": ["garden", "outdoor"],
+        "price": 25
+    },
+    {
+        "title": "Wheelbarrow",
+        "quantity": 6,
+        "categories": ["garden", "equipment"],
+        "price": 80
+    },
+    {
+        "title": "Paint Brushes",
+        "quantity": 35,
+        "categories": ["paint", "accessory"],
+        "price": 5
+    },
+    {
+        "title": "Safety Goggles",
+        "quantity": 40,
+        "categories": ["safety", "accessory"],
+        "price": 12
+    },
+    {
+        "title": "Work Gloves",
+        "quantity": 50,
+        "categories": ["safety", "clothing"],
+        "price": 8
+    },
+    {
+        "title": "Chainsaw",
+        "quantity": 7,
+        "categories": ["tool", "powered", "cutting"],
+        "price": 190
+    },
+    {
+        "title": "Pressure Washer",
+        "quantity": 4,
+        "categories": ["equipment", "cleaning"],
+        "price": 150
+    },
+    {
+        "title": "Tile Cutter",
+        "quantity": 5,
+        "categories": ["tool", "cutting"],
+        "price": 70
+    },
+    {
+        "title": "Stud Finder",
+        "quantity": 15,
+        "categories": ["tool", "electronic"],
+        "price": 25
+    },
+    {
+        "title": "LED Flashlight",
+        "quantity": 20,
+        "categories": ["tool", "lighting"],
+        "price": 18
+    },
+    {
+        "title": "Circular Saw",
+        "quantity": 10,
+        "categories": ["tool", "powered", "cutting"],
+        "price": 130
+    }
+]
