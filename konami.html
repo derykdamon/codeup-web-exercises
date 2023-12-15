@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script>
+  "use strict";
+  // The sequence to listen for: Konami Code (up, up, down, down, left, right, left, right, b, a)
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter'];
+  // Array to keep track of the current sequence entered by the user
+  let currentSequence = [];
+
+  document.addEventListener("keyup", event => {
+    // Add the pressed key to the current sequence
+    currentSequence.push(event.key);
+    // Check if the current sequence is correct
+    if (currentSequence.length === konamiCode.length) {
+      if (currentSequence.every((key, index) => key.toLowerCase() === konamiCode[index].toLowerCase())) {
+        // The user entered the correct sequence
+        alert("You have added 30 lives!");
+      }
+      // Reset the sequence
+      currentSequence = [];
+    } else if (currentSequence.length > konamiCode.length || konamiCode[currentSequence.length - 1].toLowerCase() !== event.key.toLowerCase()) {
+      // Incorrect key pressed, reset the sequence
+      currentSequence = [];
+    }
+  });
+</script>
+</body>
+</html>
