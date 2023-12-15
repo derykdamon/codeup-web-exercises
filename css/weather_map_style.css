@@ -1,0 +1,58 @@
+/* Styles for weather icon legend layout */
+.weather-icon-legend div {
+    margin-bottom: 10px; /* Space between each icon entry */
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Vertically center the icon and text */
+}
+
+/* Styles for weather icons in the legend */
+.weather-icon-legend img {
+    width: 50px; /* Fixed width for icons */
+    margin-right: 10px; /* Space between icon and description text */
+}
+
+/* General body styles */
+body {
+    background-color: black; /* Dark background for the entire body */
+    color: white; /* White text for contrast */
+}
+
+/* Styles for individual weather cards */
+.weather-card {
+    margin: 10px; /* Spacing around each card */
+    padding: 20px; /* Padding inside each card */
+    background: #192736; /* Dark card background */
+    border-radius: 5px; /* Rounded corners for the cards */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text within the card */
+    color: white; /* White text for readability */
+    flex: 1; /* Flex property for flexible sizing in flex containers */
+    min-height: 200px; /* Minimum height for each card */
+}
+
+/* Styles for the date within the weather card */
+.weather-date {
+    font-size: 1.2rem; /* Slightly larger font size for the date */
+    font-weight: bold; /* Bold font weight for prominence */
+}
+
+/* Styles for the map title */
+#map-title {
+    text-align: center; /* Center align the map title */
+    font-size: 2rem; /* Larger font size for the title */
+    margin-top: 1rem; /* Space above the title */
+}
+
+/* Styles for the map container */
+#map {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Fixed height for the map */
+}
+
+/* Styles for weather icons within the cards */
+.weather-icon {
+    width: 70px; /* Fixed width for weather icons */
+    height: auto; /* Height scales automatically */
+    margin: 0 auto; /* Center the icon horizontally */
+    display: block; /* Display as block to allow margin auto to work */
+}
