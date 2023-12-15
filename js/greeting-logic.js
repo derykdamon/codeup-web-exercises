@@ -1,5 +1,5 @@
 // greeting-logic.js
-import { getRandomNumber } from 'js/number-utils.js';
+import { getRandomNumber } from './number-utils.js';
 
 const greetings = [
     "Hello", "Hi", "Hey there", "Greetings", "Salutations", "Howdy", "Yo", "Bonjour",
