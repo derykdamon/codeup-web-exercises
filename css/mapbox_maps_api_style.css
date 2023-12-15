@@ -1,0 +1,17 @@
+body { margin: 0; padding: 0; }
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background: white;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#map {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+}
